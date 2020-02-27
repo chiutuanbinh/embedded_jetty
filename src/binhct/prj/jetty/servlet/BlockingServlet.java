@@ -9,7 +9,8 @@ import java.io.IOException;
 public class BlockingServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("apllication/json");
+        System.out.println("DO WHAT");
+        resp.setContentType("application/json");
         resp.setStatus(HttpServletResponse.SC_OK);
         resp.getWriter().println("{\"status\": \"OK\"}");
     }
